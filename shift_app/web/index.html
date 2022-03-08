@@ -97,14 +97,30 @@
       loadMainDartJs();
     }
   </script>
+
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.8/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.8/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyD0hwntLHYN3_XiCiWvJBQHqadIui4wEIk",
+      authDomain: "shift-70156.firebaseapp.com",
+      projectId: "shift-70156",
+      storageBucket: "shift-70156.appspot.com",
+      messagingSenderId: "324320372252",
+      appId: "1:324320372252:web:6f94b83a9eeb1cde93a1d9",
+      measurementId: "G-KL6TLM66SL"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
 </body>
-  const firebaseConfig = {
-    apiKey: "AIzaSyD0hwntLHYN3_XiCiWvJBQHqadIui4wEIk",
-    authDomain: "shift-70156.firebaseapp.com",
-    projectId: "shift-70156",
-    storageBucket: "shift-70156.appspot.com",
-    messagingSenderId: "324320372252",
-    appId: "1:324320372252:web:6f94b83a9eeb1cde93a1d9",
-    measurementId: "G-KL6TLM66SL"
-  };
+
 </html>
